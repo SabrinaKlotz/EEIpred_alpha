@@ -13,4 +13,5 @@ matplotlib
 seaborn
 statsmodels
 scikit-learn # 15.11.2024 added because missing
+numpy # 19.11.2024 added because missing
 pyarrow

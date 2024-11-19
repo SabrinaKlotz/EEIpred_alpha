@@ -273,7 +273,7 @@ class ProteinPairsSurfaces(InMemoryDataset):
         
         ##################change THIS LINE PER DATASET##################
         
-        lists_dir = Path('../data_collection/cv_splits/CLUST_CONTACT') 
+        lists_dir = Path('../data_collection/cv_splits/EXAMPLE') 
 
         if not protein_dir.exists():
             protein_dir.mkdir(parents=False, exist_ok=False)
