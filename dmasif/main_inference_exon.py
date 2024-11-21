@@ -22,7 +22,7 @@ import shutil
 ##############################################################################
 # mode is test, change to train for background model
 ##############################################################################
-mode = "train"
+mode = "test"
 if mode == "test":
     b_mode = False
 else:

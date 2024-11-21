@@ -1,4 +1,4 @@
-torch --index-url https://download.pytorch.org/whl/cu121
+torch==2.2.0 --index-url https://download.pytorch.org/whl/cu121
 biopython==1.78
 torch-cluster -f https://data.pyg.org/whl/torch-2.2.0+cu121.html
 torch-scatter -f https://data.pyg.org/whl/torch-2.2.0+cu121.html
@@ -12,6 +12,5 @@ pandas
 matplotlib
 seaborn
 statsmodels
-scikit-learn # 15.11.2024 added because missing
-numpy # 19.11.2024 added because missing
 pyarrow
+numpy==1.26.4
