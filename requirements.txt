@@ -13,4 +13,5 @@ matplotlib
 seaborn
 statsmodels
 pyarrow
+scikit-learn
 numpy==1.26.4
