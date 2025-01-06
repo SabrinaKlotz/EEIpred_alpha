@@ -86,7 +86,8 @@ lists_dir = Path("../data_collection/cv_splits/")
 ##############################################################################
 # change path to your pdb files including hydrogen atoms
 ##############################################################################
-pdb_dir = Path("surface_data/raw/01-benchmark_pdbs/")
+# pdb_dir = Path("surface_data/raw/01-benchmark_pdbs/")
+pdb_dir = Path("../data_collection/cv_splits/pdb")
 dataset_name = args.experiment_name.split("/")[0]
 # load files ones
 # change TRAIN TEST HERE

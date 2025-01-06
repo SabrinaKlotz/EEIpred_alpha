@@ -63,7 +63,8 @@ def convert_pdbs(pdb_dir, npy_dir):
     #print(count, list_not_npy, count_given)
 
 if __name__ == "__main__":
-    pdb_dir = Path("surface_data/raw/01-benchmark_pdbs/") # Path with PDB files
+    #pdb_dir = Path("surface_data/raw/01-benchmark_pdbs/") # Path with PDB files
+    pdb_dir = Path("../data_collection/pdb/")
     npy_dir = Path("surface_data/raw/01-benchmark_surfaces_npy/") # Path to save npy files
 
     convert_pdbs(pdb_dir, npy_dir)

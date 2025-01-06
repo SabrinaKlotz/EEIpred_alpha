@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set variables
-dataset="EXAMPLE"
+dataset="CONTACT"
 ###########if dataset is not EXAMPLE, then CHANGE DATASET in dmasif/data.py line 276################
 ### if an error occurs, please make sure to delete surface_data1/processed folder and run the code again
 fold="1"
