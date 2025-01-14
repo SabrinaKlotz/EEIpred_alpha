@@ -267,13 +267,13 @@ class ProteinPairsSurfaces(InMemoryDataset):
     def process(self):
         fold_no = self.ppi
         print(fold_no)
-        pdb_dir = Path("surface_data") / "raw" / "01-benchmark_pdbs"
+        pdb_dir = Path("surface_data") / "raw" / "01-af"
         #surf_dir = Path(self.root) / "raw" / "01-benchmark_surfaces"
-        protein_dir = Path("surface_data") / "raw" / "01-benchmark_surfaces_npy"
+        protein_dir = Path("surface_data") / "raw" / "01-benchmark_surfaces_af_npy"
         
         ##################change THIS LINE PER DATASET##################
         
-        lists_dir = Path('../data_collection/cv_splits/EXAMPLE') 
+        lists_dir = Path('../data_collection/cv_splits/CONTACT') 
 
         if not protein_dir.exists():
             protein_dir.mkdir(parents=False, exist_ok=False)

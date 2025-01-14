@@ -268,36 +268,36 @@ if optn.mode == "test":
             print("pair\t\t\t\t\t\t\tprediction\tlabel")
             for i in results_per_fold:
                 print(i[0], i[1], i[2])
-        # write results_per_fold to file
-        # for readable format
-        #if optn.method == "dmasif":
-        #    if not os.path.exists("results/dMaSIF_DL/"):
-        #        os.makedirs("results/dMaSIF_DL/")
-        #    with open("results/dMaSIF_DL/{}_fold{}_results.csv".format(optn.dataset, cv_idx), "w") as f:
-        #        writer = csv.writer(f)
-        #        writer.writerow(["pair", "prediction", "label"])
-        #        writer.writerows(results_per_fold)
-        #elif optn.method == "glinter":
-        #    if not os.path.exists("results/GLINTER_DL/"):
-        #        os.makedirs("results/GLINTER_DL/")
-        #    with open("results/GLINTER_DL/{}_fold{}_results.csv".format(optn.dataset, cv_idx), "w") as f:
-        #        writer = csv.writer(f)
-        #        writer.writerow(["pair", "prediction", "label"])
-        #        writer.writerows(results_per_fold)
-        #elif optn.method == "ProteinMAE":
-        #    if not os.path.exists("results/ProteinMAE_DL/"):
-        #        os.makedirs("results/ProteinMAE_DL/")
-        #    with open("results/ProteinMAE_DL/{}_fold{}_results.csv".format(optn.dataset, cv_idx), "w") as f:
-        #        writer = csv.writer(f)
-        #        writer.writerow(["pair", "prediction", "label"])
-        #        writer.writerows(results_per_fold)
-        #else:
-        #    if not os.path.exists("results/{}_DL/".format(optn.method)):
-        #        os.makedirs("results/{}_DL/".format(optn.method))
-        #    with open("results/{}_DL/{}_fold{}_results.csv".format(optn.method, optn.dataset, cv_idx), "w") as f:
-        #        writer = csv.writer(f)
-        #        writer.writerow(["pair", "prediction", "label"])
-        #        writer.writerows(results_per_fold)
+         write results_per_fold to file
+         for readable format
+        if optn.method == "dmasif":
+            if not os.path.exists("results/dMaSIF_DL/"):
+                os.makedirs("results/dMaSIF_DL/")
+            with open("results/dMaSIF_DL/{}_fold{}_results.csv".format(optn.dataset, cv_idx), "w") as f:
+                writer = csv.writer(f)
+                writer.writerow(["pair", "prediction", "label"])
+                writer.writerows(results_per_fold)
+        elif optn.method == "glinter":
+            if not os.path.exists("results/GLINTER_DL/"):
+                os.makedirs("results/GLINTER_DL/")
+            with open("results/GLINTER_DL/{}_fold{}_results.csv".format(optn.dataset, cv_idx), "w") as f:
+                writer = csv.writer(f)
+                writer.writerow(["pair", "prediction", "label"])
+                writer.writerows(results_per_fold)
+        elif optn.method == "ProteinMAE":
+            if not os.path.exists("results/ProteinMAE_DL/"):
+                os.makedirs("results/ProteinMAE_DL/")
+            with open("results/ProteinMAE_DL/{}_fold{}_results.csv".format(optn.dataset, cv_idx), "w") as f:
+                writer = csv.writer(f)
+                writer.writerow(["pair", "prediction", "label"])
+                writer.writerows(results_per_fold)
+        else:
+            if not os.path.exists("results/{}_DL/".format(optn.method)):
+                os.makedirs("results/{}_DL/".format(optn.method))
+            with open("results/{}_DL/{}_fold{}_results.csv".format(optn.method, optn.dataset, cv_idx), "w") as f:
+                writer = csv.writer(f)
+                writer.writerow(["pair", "prediction", "label"])
+                writer.writerows(results_per_fold)
 
         # uncomment to result files for creating plots
         if optn.method == "dmasif":

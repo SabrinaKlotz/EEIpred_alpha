@@ -11,10 +11,10 @@ cuda_no="0" # define your gpu number
 cd dmasif
 
 # create directory for the npy files if not exists
-mkdir -p surface_data/raw/01-benchmark_surfaces_npy
+#mkdir -p surface_data/raw/01-benchmark_surfaces_npy
 
 # Convert PDB to NPY files
-python convert_pdb2npy.py
+#python convert_pdb2npy.py
 
 # Run dMaSIF predictions
 python -W ignore -u main_inference_exon.py --experiment_name "$dataset/dMaSIF_search_3layer_12_${fold}_$dataset" --batch_size 1 --embedding_layer dMaSIF --search True --device cuda:"$cuda_no" --radius 12.0 --emb_dim 16 --n_layers 3 --train_no "$fold"
