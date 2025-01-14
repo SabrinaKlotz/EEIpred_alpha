@@ -268,8 +268,8 @@ if optn.mode == "test":
             print("pair\t\t\t\t\t\t\tprediction\tlabel")
             for i in results_per_fold:
                 print(i[0], i[1], i[2])
-         write results_per_fold to file
-         for readable format
+        # write results_per_fold to file
+         # for readable format
         if optn.method == "dmasif":
             if not os.path.exists("results/dMaSIF_DL/"):
                 os.makedirs("results/dMaSIF_DL/")
